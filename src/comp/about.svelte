@@ -1,13 +1,6 @@
 <script>
-	import main1 from '$lib/img/1main.svg';
-	import main2 from '$lib/img/2main.svg';
-	import main3 from '$lib/img/3main.svg';
+	import Car3 from '$lib/img/Car3.svg';
 
-	const items = [
-		{ name: 'Разовая диагностика', price: 1590, img: `${main1}` },
-		{ name: 'Автоподбор под ключ', price: 25900, img: `${main2}` },
-		{ name: 'Эксперт на день', price: 12900, img: `${main3}` }
-	];
 </script>
 
 <div class="sm:h-screen pb-44 max-w-7xl sm:mt-0 my-20 mx-5 sm:flex sm:mx-auto">
@@ -19,7 +12,7 @@
 	</div>
 	<div class="sm:w-1/2 mx-5 mt-8">
 		<div class="sm:mb-20 sm:flex sm:justify-end ">
-			<img class="sm:w-2/4 w-full h-full" src="src\lib\img\Car3.svg" alt="" />
+			<img class="sm:w-2/4 w-full h-full" src={Car3} alt="" />
 		</div>
 	</div>
 </div>
