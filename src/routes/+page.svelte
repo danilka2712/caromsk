@@ -2,7 +2,7 @@
 	import Icon from '@iconify/svelte';
 	import Price from '../comp/price.svelte';
 	import Anket from '../comp/anket.svelte';
-	import Logo from '$lib/img/Logo.svg'
+	import Logo from '$lib/img/Logo.png'
 import About from '../comp/about.svelte';
 </script>
 
