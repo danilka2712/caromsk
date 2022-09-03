@@ -3,7 +3,7 @@
 </script>
 
 <div class=" max-w-7xl sm:mt-0 mt-24 mx-auto mb-16">
-    <div class="sm:w-[48%] h-screen z-10 absolute top-12 sm:top-0  right-0 ">
+    <div class="sm:w-[48%] h-screen hidden sm:flex z-10 absolute top-12 sm:top-0  right-0 ">
         <img
             class="object-cover sm:scale-125 object-left-bottom w-screen h-screen"
             src={Image2}
