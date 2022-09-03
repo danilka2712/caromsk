@@ -2,12 +2,13 @@
 	import Icon from '@iconify/svelte';
 	import Price from '../comp/price.svelte';
 	import Anket from '../comp/anket.svelte';
+	import Logo from '$lib/img/Logo.svg'
 import About from '../comp/about.svelte';
 </script>
 
 <header class="max-w-7xl  flex justify-between items-center mx-5 sm:mx-auto py-8">
 	<div class="items-center flex">
-		<img class="w-44 " src="src\lib\img\Logo.svg" alt="" />
+		<img class="w-44 " src={Logo} alt="" />
 	</div>
 	<div class="sm:flex hidden items-center gap-8">
 		<a href="/">Главная</a>
