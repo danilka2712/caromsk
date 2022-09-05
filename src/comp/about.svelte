@@ -40,7 +40,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="hidden sm:flex">
+	<div class="hidden lg:flex">
 		<img class="w-[55rem] absolute -right-32 z-10 -bottom-20" src={Car3} alt="" />
 		<div class=" bg-[#F24347] w-[34rem] h-[34rem] absolute rounded-full z-0 translate-x-24"></div>
 	</div>
