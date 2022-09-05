@@ -1,38 +1,90 @@
 <script>
-	import main1 from '$lib/img/1main.svg';
-	import main2 from '$lib/img/2main.svg';
-	import main3 from '$lib/img/3main.svg';
+	let current = 'Проверка одного автf';
+	let price = 1990;
 
 	const items = [
-		{ name: 'Разовая диагностика', price: 1590, img: `${main1}` },
-		{ name: 'Автоподбор под ключ', price: 25900, img: `${main2}` },
-		{ name: 'Эксперт на день', price: 12900, img: `${main3}` }
+		{
+			id: 1,
+			name: 'Проверка одного автa',
+			text: 'Комплексно проверим выбранный вами авто в любом городе РФ',
+			price: 1990
+		},
+		{
+			id: 2,
+			name: 'Проверка одного автe',
+			text: 'Комплексно проверим выбранный вами авто в любом городе РФ',
+			price: 19903
+		},
+		{
+			id: 3,
+			name: 'Проверка одного авт3',
+			text: 'Комплексно проверим выбранный вами авто в любом городе РФ',
+			price: 19902
+		},
+		{
+			id: 4,
+			name: 'Проверка одного автf',
+			text: 'Комплексно проверим выбранный вами авто в любом городе РФ',
+			price: 19901
+		}
 	];
 </script>
 
-<div class="sm:h-[80vh] max-w-7xl mx-auto">
-	<div class="mb-20 mx-5 sm:mx-0">
-		<h1 class="text-2xl font-medium">Наши услуги</h1>
-	</div>
-	<div class="sm:grid sm:mx-0 mx-5 grid-cols-3 gap-10">
-		{#each items as i}
-			<div
-				class=" bg-white rounded-md h-72 mb-5 shadow-md "
-			>
-				<div class=" relative cursor-default">
-					<h1 class="p-8 font-medium text-xl z-20 absolute">{i.name}</h1>
-					<h1 class="p-8 pt-16 font-medium  text-[#E04F4E] z-20 font-sans text-4xl absolute">
-						{i.price}₽
-					</h1>
-
-					<img
-						class=" object-cover  object-bottom h-full w-full"
-						src={i.img}
-						alt=""
-					/>
+<div id="2" class="sm:h-screen  bg-[#F5F5F5]">
+	<div class=" max-w-7xl sm:mx-auto mx-5 py-14 sm:pt-20">
+		<div>
+			<h1 class=" font-semibold text-3xl sm:text-4xl">Выберете услугу</h1>
+		</div>
+		<div class="grid grid-cols-2 sm:grid-cols-4 mt-16 gap-5 sm:gap-14">
+			{#each items as i}
+				<div
+					on:click={() => ((current = i.name), (price = i.price))}
+					class:active={current === i.name}
+					class="bg-white  sm:h-48 p-7 rounded-lg"
+				>
+					<h1 class="text-xl flex  leading-6 sm:mb-5 w-32">{i.name}</h1>
+					<p class="sm:flex hidden w-40 text-sm font-light">
+						Комплексно проверим выбранный вами авто в любом городе РФ
+					</p>
+					<div class="sm:flex flex-col hidden">
+						{#if current === i.name}
+							<p class=" text-xs pt-6 font-light">Стоимость услуги:</p>
+							<h1 class=" font-medium text-xl">1990 руб.</h1>
+						{/if}
+					</div>
+				</div>
+			{/each}
+		</div>
+		<div class="sm:mt-20 mt-10 items-center sm:grid sm:grid-cols-4 gap-14">
+			<div class="mb-14 sm:mb-0">
+				<h1 class=" font-medium text-xl">Вы выбрали:</h1>
+				<p>{current}</p>
+				
+				<div class="bg-[#E7E7E7] w-full my-6 sm:hidden h-[0.5px]" />
+				<div class="flex justify-between sm:hidden">
+					<p class="mt-2 text-xl ">Цена:</p>
+					<p class="mt-2 text-xl ">{price} руб.</p>
 				</div>
 			</div>
-		{/each}
+			<div
+				class="p-10 justify-between gap-5 sm:gap-16 flex flex-col sm:flex-row col-span-3 rounded-lg bg-[#D9D9D9]/50"
+			>
+				<input placeholder="Ваше имя" class="p-3 py-4 sm:py-0 w-full rounded-lg" type="text" />
+				<input
+					placeholder="Номер телефона"
+					class="p-3 py-4 sm:py-0 w-full rounded-lg"
+					type="text"
+				/>
+				<button class="btn w-full py-4 rounded-lg text-white">Оставить заявку</button>
+			</div>
+		</div>
 	</div>
-	
 </div>
+
+<style>
+	.active {
+		background-color: #f24347;
+		color: white;
+		height: fit-content;
+	}
+</style>

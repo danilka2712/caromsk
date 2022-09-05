@@ -3,15 +3,13 @@
 @tailwind utilities;
 
 body {
-	background-color: #c9e7f2;
-	color: #242d39;
-	font-family: 'Raleway', sans-serif;
+	background-color: #ffffff;
+	color: #364168;
+	font-family: 'Inter', sans-serif;
 	overflow-x: hidden;
 }
 
-main {
-	background-color: #fdfdfd;
-}
+
 
 .marquee {
 	overflow: hidden;
@@ -39,4 +37,7 @@ main {
 	-webkit-text-stroke: 2px black;
 	-webkit-text-fill-color: transparent;
     font-family: 'Raleway', sans-serif;
+}
+.btn {
+	background-color: #f24347;
 }
