@@ -1,5 +1,7 @@
 <script>
 	import Logo from '$lib/img/Logo.svg';
+	import Logopng from '$lib/img/Logo.png';
+
 	import Icon from '@iconify/svelte';
 	import Reviews from '../comp/Reviews.svelte';
 	import About from '../comp/about.svelte';
@@ -10,7 +12,9 @@
 <header class=" max-w-7xl  items-center mx-5 sm:mx-auto mt-8 flex justify-between">
 	<div class="flex sm:w-fit w-full justify-between items-center">
 		<div>
-			<img class="w-48 sm:pt-0 pt-1" src={Logo} alt="" />
+			<img class="w-48 hidden sm:flex sm:pt-0 pt-1" src={Logo} alt="" />
+			<img class="w-48 sm:hidden sm:pt-0 pt-1" src={Logopng} alt="" />
+
 		</div>
 		<div class="sm:hidden">
 			<Icon class="w-8 h-8" icon="heroicons-solid:menu-alt-4" style="color: #364168;" />
@@ -31,20 +35,20 @@
 <main>
 	<div id="1" class="max-w-6xl relative mx-5 sm:mx-auto flex items-center my-72 sm:my-0 sm:h-[100vh]">
 		<div
-			class="bg-[#F24347] hidden sm:flex  items-center justify-center  rounded-full sm:top-36 right-36 bottom-56 sm:right-[15rem] absolute w-32 h-32 sm:w-64 sm:h-64"
+			class="bg-[#F24347] hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-16 absolute  sm:w-64 sm:h-64"
 		>
 			<Icon
-				class="w-6 h-6 sm:w-40 sm:h-40"
+				class="w-6 h-6 sm:w-32  sm:h-32"
 				icon="akar-icons:arrow-right"
 				style="color: white;"
 				rotate="90deg"
 			/>
 		</div>
 		<div
-			class="bg-[#F24347] flex top-56 left-28 items-center justify-center absolute rounded-full w-32 h-32"
+			class="bg-[#F24347] sm:hidden flex top-56 left-28 items-center justify-center absolute rounded-full w-32 h-32"
 		>
 			<Icon
-				class="w-6 h-6 sm:w-40 sm:h-40"
+				class="w-6 h-6 sm:hidden sm:w-40 sm:h-40"
 				icon="akar-icons:arrow-right"
 				style="color: white;"
 				rotate="90deg"
