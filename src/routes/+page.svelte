@@ -45,7 +45,7 @@
 			/>
 		</div>
 		<div
-			class="bg-[#F24347] sm:hidden flex top-56 left-28 items-center justify-center absolute rounded-full w-32 h-32"
+			class="bg-[#F24347] sm:hidden flex top-56 left-32 items-center justify-center absolute rounded-full w-32 h-32"
 		>
 			<Icon
 				class="w-6 h-6 sm:hidden sm:w-40 sm:h-40"
@@ -55,7 +55,7 @@
 			/>
 		</div>
 		<div class="sm:mb-24">
-			<h1 class=" font-bold text-5xl sm:text-[128px] leading-none m-0 text-stroke uppercase">
+			<h1 class=" font-bold text-5xl sm:text-[128px] leading-none m-0 sm:text-stroke uppercase">
 				ВЫЕЗДНАЯ
 			</h1>
 			<h1 class="sm:ml-28 font-bold text-5xl sm:text-[128px] leading-none m-0 uppercase">
