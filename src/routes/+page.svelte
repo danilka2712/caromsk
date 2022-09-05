@@ -33,9 +33,9 @@
 	</div>
 </header>
 <main>
-	<div id="1" class="max-w-6xl relative mx-5 sm:mx-auto flex items-center my-72 sm:my-0 sm:h-[100vh]">
+	<div id="1" class="max-w-6xl relative sm:px-6 mx-5 sm:mx-auto flex items-center my-72 sm:my-0 sm:h-[100vh]">
 		<div
-			class="bg-[#F24347] hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-16 absolute  sm:w-64 sm:h-64"
+			class="bg-[#F24347] hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-10 absolute  sm:w-64 sm:h-64"
 		>
 			<Icon
 				class="w-6 h-6 sm:w-32  sm:h-32"

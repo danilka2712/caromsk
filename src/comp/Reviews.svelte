@@ -25,7 +25,7 @@
 
 <div class="sm:h-[70vh] sm:relative  max-w-7xl pt-20 mx-5 sm:flex sm:mx-auto">
 	<div class="w-full">
-		<div class="">
+		<div class="mb-12 sm:mb-0">
 			<h1 class="text-3xl sm:text-4xl font-semibold">Отзывы</h1>
 		</div>
 		<div class="sm:grid sm:mt-16 sm:grid-cols-4 grid gap-5 sm:gap-16 ">
