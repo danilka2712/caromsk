@@ -86,8 +86,8 @@
 			</h1>
 		</div>
 		<div class="sm:hidden ">
-			<h1 class="text-4xl font-medium">Выездная диагностика автомобиля</h1>
-			<p class="mt-2">
+			<h1 class="text-5xl font-medium">Выездная диагностика автомобиля</h1>
+			<p class="mt-3 text-lg">
 				Выявим все скрытые дефекты<br/> последствия аварий, признаки работы<br/> в такси, скрученный пробег.
 			</p>
 		</div>
