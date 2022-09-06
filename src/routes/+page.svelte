@@ -51,7 +51,7 @@
 <main>
 	<div
 		id="1"
-		class="max-w-6xl relative  box sm:px-6 mx-5 sm:mx-auto flex items-center my-72 sm:my-0 sm:h-[100vh]"
+		class="max-w-6xl relative  box sm:px-6 mx-5 sm:mx-auto flex items-center my-20 sm:my-0 sm:h-[100vh]"
 	>
 		<div
 			class="bg-[#F24347] hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-10 absolute  sm:w-64 sm:h-64"
@@ -66,12 +66,12 @@
 			/>
 		</div>
 		<div
-			class="bg-[#F24347] sm:hidden flex top-56 left-32 items-center justify-center absolute rounded-full w-32 h-32"
+			class="bg-[#F24347] sm:hidden flex top-40 right-0 items-center justify-center absolute rounded-full w-20 h-20"
 		>
-		<img class="z-0 w-28 absolute animate-spin" src={Crug} alt="">
+		<img class="z-0 w-16 absolute animate-spin" src={Crug} alt="">
 
 			<Icon
-				class="w-8 h-8 sm:hidden sm:w-40 sm:h-40"
+				class="w-4 h-4 sm:hidden sm:w-40 sm:h-40"
 				icon="akar-icons:arrow-right"
 				style="color: white;"
 				rotate="90deg"
