@@ -3,7 +3,7 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Logo from '$lib/img/Logo.svg';
 	import Logopng from '$lib/img/Logo.png';
-	import Crug from '$lib/img/crug.svg';
+	import Crug from '$lib/img/crug.webp';
 
 	import Icon from '@iconify/svelte';
 	import Reviews from '../comp/Reviews.svelte';
