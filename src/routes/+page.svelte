@@ -22,7 +22,7 @@
 			scrollTrigger: {
 				start: 20,
 				end: 600,
-				scrub: true,
+				scrub: true
 			}
 		});
 	});
@@ -51,16 +51,16 @@
 	</div>
 </header>
 <main class="">
-	<img class="absolute object-cover -right-0 bottom-44 z-10 " src={Car3} alt="" />
-
 	<div
 		id="1"
-		class="max-w-6xl relative  box sm:px-6 mx-5 sm:mx-auto flex items-center mt-44 mb-72 sm:my-0 sm:h-[100vh]"
+		class="max-w-6xl box sm:px-6 mx-5 sm:mx-auto flex items-center mt-44 mb-72 sm:my-0 sm:h-[100vh]"
 	>
+		<img class="absolute w-fit sm:hidden -right-5 -bottom-80 object-cover z-10 " src={Car3} alt="" />
+
 		<div
 			class="bg-[#F24347] hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-10 absolute  sm:w-64 sm:h-64"
 		>
-		<img class="z-0 w-56 absolute animate-spin" src={Crug} alt="">
+			<img class="z-0 w-56 absolute animate-spin" src={Crug} alt="" />
 
 			<Icon
 				class="w-6 h-6 z-10 sm:w-28  sm:h-28"
@@ -69,8 +69,8 @@
 				rotate="90deg"
 			/>
 		</div>
-		
-		<div class="sm:mb-24 hidden sm:flex box">
+
+		<div class="sm:mb-24 hidden sm:flex flex-col box">
 			<h1 class=" font-bold text-5xl sm:text-[128px] leading-none m-0 text-stroke uppercase">
 				ВЫЕЗДНАЯ
 			</h1>
@@ -81,11 +81,8 @@
 				автомобиля
 			</h1>
 		</div>
-		<div class="sm:hidden box">
-
-			<h1 class="font-bold text-5xl sm:text-[128px] leading-none m-0  uppercase">
-				ВЫЕЗДНАЯ
-			</h1>
+		<div class="sm:hidden relative w-full box">
+			<h1 class="font-bold text-5xl sm:text-[128px] leading-none m-0  uppercase">ВЫЕЗДНАЯ</h1>
 			<h1 class="sm:ml-28 font-bold text-5xl sm:text-[128px] leading-none m-0 uppercase">
 				ПРОВЕРКА
 			</h1>
