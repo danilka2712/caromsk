@@ -1,13 +1,27 @@
 <script>
 	import axios from 'axios';
-	
+	import { imask } from '@imask/svelte';
 	let name = '';
-	let number = '+7';
+	let number = '';
 	let current = 'Проверка автомобиля';
 	let price = 1990;
 	const token = '5312487588:AAHrH9cNC5-amKNacngShd3ljnOwaJOmsHs';
 	const chatId = 596613157;
-	
+
+	const options = {
+		mask: '{+7} (000) 000-00-00',
+		lazy: false
+	};
+
+	function accept({ detail: maskRef }) {
+		console.log('accept', maskRef.value);
+		number = maskRef.value;
+	}
+
+	function complete({ detail: maskRef }) {
+		console.log('complete', maskRef.unmaskedValue);
+	}
+
 	function submit() {
 		const fullMessage = `Имя: ${name}%0AНомер телефона: ${number}%0AВид услуги: ${current}`;
 		axios
@@ -102,6 +116,9 @@
 				/>
 				<input
 					bind:value={number}
+					use:imask={options}
+					on:accept={accept}
+					on:complete={complete}
 					placeholder="Номер телефона"
 					class="p-3 py-4 sm:py-0 w-full rounded-lg"
 					type="tel"

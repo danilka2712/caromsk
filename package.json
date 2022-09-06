@@ -28,8 +28,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@imask/svelte": "^6.4.2",
 		"axios": "^0.27.2",
 		"gsap": "^3.11.1",
+		"inputmask": "^5.0.7",
 		"svelte-carousel": "^1.0.19",
 		"typograf": "^6.14.1"
 	}
