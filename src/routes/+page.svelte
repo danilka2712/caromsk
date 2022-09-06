@@ -32,7 +32,11 @@
 			<img class="w-48 hidden sm:flex sm:pt-0 pt-1" src={Logo} alt="" />
 			<img class="w-40 sm:hidden sm:pt-0 pt-1" src={Logo} alt="" />
 		</div>
-		<div class="sm:hidden">
+		<div class="sm:hidden  flex items-center gap-5">
+			<a class="bg-[#364168] w-7 h-7 flex items-center justify-center rounded-full" href="tel:+79081197279">
+			<Icon class="w-4 h-4" icon="akar-icons:phone" color="#ffffff" />
+
+			</a>
 			<Icon class="w-7 h-7" icon="heroicons-solid:menu-alt-4" style="color: #364168;" />
 		</div>
 	</div>
@@ -98,7 +102,7 @@
 <footer class="bg-[#F5F5F5]  sm:h-[25vh]">
 	<div class="max-w-7xl sm:py-0 py-12 mx-5 flex justify-between sm:mx-auto sm:pt-16">
 		<img class="w-48" src={Logo} alt="" />
-		<div>
+		<div class="flex flex-col items-end">
 			<div class="flex gap-7 mb-7">
 				<a href="http://">
 					<Icon class="w-7 h-7" icon="akar-icons:whatsapp-fill" style="color: #364168;" />
