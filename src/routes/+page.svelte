@@ -3,8 +3,6 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Logo from '$lib/img/Logo.svg';
 	import Car3 from '$lib/img/Avtomih.svg';
-
-	import Logopng from '$lib/img/Logo.png';
 	import Crug from '$lib/img/crug.webp';
 
 	import Icon from '@iconify/svelte';
@@ -32,7 +30,7 @@
 	<div class="flex sm:w-fit w-full justify-between items-center">
 		<div>
 			<img class="w-48 hidden sm:flex sm:pt-0 pt-1" src={Logo} alt="" />
-			<img class="w-40 sm:hidden sm:pt-0 pt-1" src={Logopng} alt="" />
+			<img class="w-40 sm:hidden sm:pt-0 pt-1" src={Logo} alt="" />
 		</div>
 		<div class="sm:hidden">
 			<Icon class="w-7 h-7" icon="heroicons-solid:menu-alt-4" style="color: #364168;" />
