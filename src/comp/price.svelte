@@ -1,7 +1,6 @@
 <script>
 	import axios from 'axios';
-	import Car3 from '$lib/img/Avtomih.svg';
-
+	
 	let name = '';
 	let number = '+7';
 	let current = 'Проверка автомобиля';
@@ -46,7 +45,7 @@
 		},
 		{
 			id: 4,
-			name: 'Дополнительные услуги',
+			name: 'Эвакуатор',
 			text: '- Эвакуатор - Вскрытие автомобиля',
 			price: 1530
 		}

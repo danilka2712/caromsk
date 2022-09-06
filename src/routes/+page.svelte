@@ -55,7 +55,11 @@
 		id="1"
 		class="max-w-6xl box sm:px-6 mx-5 sm:mx-auto flex items-center mt-44 mb-72 sm:my-0 sm:h-[100vh]"
 	>
-		<img class="absolute w-fit sm:hidden -right-5 -bottom-80 object-cover z-10 " src={Car3} alt="" />
+		<img
+			class="absolute w-fit sm:hidden -right-5 -bottom-80 object-cover z-10 "
+			src={Car3}
+			alt=""
+		/>
 
 		<div
 			class="bg-[#F24347] hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-10 absolute  sm:w-64 sm:h-64"
@@ -81,14 +85,11 @@
 				автомобиля
 			</h1>
 		</div>
-		<div class="sm:hidden relative w-full box">
-			<h1 class="font-bold text-5xl sm:text-[128px] leading-none m-0  uppercase">ВЫЕЗДНАЯ</h1>
-			<h1 class="sm:ml-28 font-bold text-5xl sm:text-[128px] leading-none m-0 uppercase">
-				ПРОВЕРКА
-			</h1>
-			<h1 class="sm:ml-12 font-bold text-5xl sm:text-[128px] leading-none m-0 uppercase">
-				автомобиля
-			</h1>
+		<div class="sm:hidden ">
+			<h1 class="text-4xl font-medium">Выездная диагностика автомобиля</h1>
+			<p class="mt-2">
+				Выявим все скрытые дефекты<br/> последствия аварий, признаки работы<br/> в такси, скрученный пробег.
+			</p>
 		</div>
 	</div>
 	<Price />
