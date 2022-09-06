@@ -1,23 +1,37 @@
 <script>
+	import { gsap } from 'gsap/dist/gsap';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Logo from '$lib/img/Logo.svg';
 	import Logopng from '$lib/img/Logo.png';
-
 	import Icon from '@iconify/svelte';
 	import Reviews from '../comp/Reviews.svelte';
 	import About from '../comp/about.svelte';
 	import Price from '../comp/price.svelte';
 	import Faq from '../comp/Faq.svelte';
+	import { onMount } from 'svelte';
+	gsap.registerPlugin(ScrollTrigger);
+
+	onMount(() => {
+		gsap.to('.box', {
+			scale: 1.02,
+
+			scrollTrigger: {
+				start: 20,
+				end: 600,
+				scrub: true,
+			}
+		});
+	});
 </script>
 
-<header class=" max-w-7xl  items-center mx-5 sm:mx-auto mt-8 flex justify-between">
+<header class=" max-w-7xl  items-center mx-5 sm:mx-auto mt-5 sm:mt-8 flex justify-between">
 	<div class="flex sm:w-fit w-full justify-between items-center">
 		<div>
 			<img class="w-48 hidden sm:flex sm:pt-0 pt-1" src={Logo} alt="" />
-			<img class="w-48 sm:hidden sm:pt-0 pt-1" src={Logopng} alt="" />
-
+			<img class="w-40 sm:hidden sm:pt-0 pt-1" src={Logopng} alt="" />
 		</div>
 		<div class="sm:hidden">
-			<Icon class="w-8 h-8" icon="heroicons-solid:menu-alt-4" style="color: #364168;" />
+			<Icon class="w-7 h-7" icon="heroicons-solid:menu-alt-4" style="color: #364168;" />
 		</div>
 	</div>
 
@@ -33,12 +47,17 @@
 	</div>
 </header>
 <main>
-	<div id="1" class="max-w-6xl relative sm:px-6 mx-5 sm:mx-auto flex items-center my-72 sm:my-0 sm:h-[100vh]">
+	<div
+		id="1"
+		class="max-w-6xl relative  box sm:px-6 mx-5 sm:mx-auto flex items-center my-72 sm:my-0 sm:h-[100vh]"
+	>
 		<div
 			class="bg-[#F24347] hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-10 absolute  sm:w-64 sm:h-64"
 		>
+		<img class="z-0 w-56 absolute animate-spin" src="src\lib\img\crug.svg" alt="">
+
 			<Icon
-				class="w-6 h-6 sm:w-32  sm:h-32"
+				class="w-6 h-6 z-10 sm:w-28  sm:h-28"
 				icon="akar-icons:arrow-right"
 				style="color: white;"
 				rotate="90deg"
@@ -47,15 +66,17 @@
 		<div
 			class="bg-[#F24347] sm:hidden flex top-56 left-32 items-center justify-center absolute rounded-full w-32 h-32"
 		>
+		<img class="z-0 w-28 absolute animate-spin" src="src\lib\img\crug.svg" alt="">
+
 			<Icon
-				class="w-6 h-6 sm:hidden sm:w-40 sm:h-40"
+				class="w-8 h-8 sm:hidden sm:w-40 sm:h-40"
 				icon="akar-icons:arrow-right"
 				style="color: white;"
 				rotate="90deg"
 			/>
 		</div>
-		<div class="sm:mb-24">
-			<h1 class=" font-bold text-5xl sm:text-[128px] leading-none m-0 sm:text-stroke uppercase">
+		<div class="sm:mb-24 box">
+			<h1 class=" font-bold text-5xl sm:text-[128px] leading-none m-0 text-stroke uppercase">
 				ВЫЕЗДНАЯ
 			</h1>
 			<h1 class="sm:ml-28 font-bold text-5xl sm:text-[128px] leading-none m-0 uppercase">

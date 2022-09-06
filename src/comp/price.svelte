@@ -1,6 +1,27 @@
 <script>
+	import axios from 'axios';
+	let name = '';
+	let number = '+7';
 	let current = 'Проверка автомобиля';
 	let price = 1990;
+	const token = '5312487588:AAHrH9cNC5-amKNacngShd3ljnOwaJOmsHs';
+	const chatId = 596613157;
+	
+	function submit() {
+		const fullMessage = `Имя: ${name}%0AНомер телефона: ${number}%0AВид услуги: ${current}`;
+		axios
+			.post(
+				`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${fullMessage}`
+			)
+			.then(
+				(response) => {
+					console.log('SUBMIT', response);
+				},
+				(error) => {
+					console.log(error);
+				}
+			);
+	}
 
 	const items = [
 		{
@@ -59,24 +80,33 @@
 			<div class="mb-14 sm:mb-0">
 				<h1 class=" font-medium text-xl">Вы выбрали:</h1>
 				<p>{current}</p>
-				
+
 				<div class="bg-[#E7E7E7] w-full my-6 sm:hidden h-[0.5px]" />
 				<div class="flex justify-between sm:hidden">
 					<p class="mt-2 text-xl ">Цена:</p>
 					<p class="mt-2 text-xl ">{price} руб.</p>
 				</div>
 			</div>
-			<div
+
+			<form
+				on:submit|preventDefault={submit}
+				action=""
 				class="p-10 justify-between gap-5 sm:gap-16 flex flex-col sm:flex-row col-span-3 rounded-lg bg-[#D9D9D9]/50"
 			>
-				<input placeholder="Ваше имя" class="p-3 py-4 sm:py-0 w-full rounded-lg" type="text" />
 				<input
+					bind:value={name}
+					placeholder="Ваше имя"
+					class="p-3 py-4 sm:py-0 w-full rounded-lg"
+					type="text"
+				/>
+				<input
+					bind:value={number}
 					placeholder="Номер телефона"
 					class="p-3 py-4 sm:py-0 w-full rounded-lg"
 					type="text"
 				/>
 				<button class="btn w-full py-4 rounded-lg text-white">Оставить заявку</button>
-			</div>
+			</form>
 		</div>
 	</div>
 </div>
