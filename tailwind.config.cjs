@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       animation: {
         'spin': 'spin 20s linear infinite',
+      },
+      scale: {
+        '102': '1.02',
       }
     },
   },

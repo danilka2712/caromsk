@@ -31,8 +31,8 @@
 		<div class="sm:grid sm:mt-16 sm:grid-cols-4 grid gap-5 sm:gap-16 ">
 			{#each reviews as r}
 				<div class="bg-[#F5F5F5] p-7 rounded-lg w-full">
-					<h1>{r.name}</h1>
-					<p class=" text-sm">{r.text}</p>
+					<h1 class="sm:text-base text-lg font-medium pb-2">{r.name}</h1>
+					<p class="sm:text-sm">{r.text}</p>
 				</div>
 			{/each}
 		</div>
