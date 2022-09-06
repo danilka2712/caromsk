@@ -26,6 +26,9 @@
 	});
 </script>
 
+
+
+
 <header class=" max-w-7xl  items-center mx-5 sm:mx-auto mt-5 sm:mt-8 flex justify-between">
 	<div class="flex sm:w-fit w-full justify-between items-center">
 		<div>
@@ -33,9 +36,11 @@
 			<img class="w-40 sm:hidden sm:pt-0 pt-1" src={Logo} alt="" />
 		</div>
 		<div class="sm:hidden  flex items-center gap-5">
-			<a class="bg-[#364168] w-7 h-7 flex items-center justify-center rounded-full" href="tel:+79081197279">
-			<Icon class="w-4 h-4" icon="akar-icons:phone" color="#ffffff" />
-
+			<a
+				class="bg-[#364168] w-7 h-7 flex items-center justify-center rounded-full"
+				href="tel:+79081197279"
+			>
+				<Icon class="w-4 h-4" icon="akar-icons:phone" color="#ffffff" />
 			</a>
 			<Icon class="w-7 h-7" icon="heroicons-solid:menu-alt-4" style="color: #364168;" />
 		</div>
@@ -90,7 +95,8 @@
 		<div class="sm:hidden ">
 			<h1 class="text-5xl font-medium">Выездная диагностика автомобиля</h1>
 			<p class="mt-3 text-lg">
-				Выявим все скрытые дефекты<br/> последствия аварий, признаки работы<br/> в такси, скрученный пробег.
+				Выявим все скрытые дефекты<br /> последствия аварий, признаки работы<br /> в такси, скрученный
+				пробег.
 			</p>
 		</div>
 	</div>
