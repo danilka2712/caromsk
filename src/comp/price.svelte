@@ -45,8 +45,8 @@
 		},
 		{
 			id: 4,
-			name: 'Эвакуатор',
-			text: '- Эвакуатор - Вскрытие автомобиля',
+			name: 'Заказать эвакуатор',
+			text: 'Перевозим все виды техники до 3,5 тонн',
 			price: 1530
 		}
 	];
@@ -98,13 +98,13 @@
 					bind:value={name}
 					placeholder="Ваше имя"
 					class="p-3 py-4 sm:py-0 w-full rounded-lg"
-					type="text"
+					type="name"
 				/>
 				<input
 					bind:value={number}
 					placeholder="Номер телефона"
 					class="p-3 py-4 sm:py-0 w-full rounded-lg"
-					type="text"
+					type="tel"
 				/>
 				<button class="btn w-full py-4 rounded-lg text-white">Оставить заявку</button>
 			</form>
