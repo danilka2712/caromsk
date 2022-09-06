@@ -3,6 +3,8 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Logo from '$lib/img/Logo.svg';
 	import Logopng from '$lib/img/Logo.png';
+	import Crug from '$lib/img/crug.svg';
+
 	import Icon from '@iconify/svelte';
 	import Reviews from '../comp/Reviews.svelte';
 	import About from '../comp/about.svelte';
@@ -54,7 +56,7 @@
 		<div
 			class="bg-[#F24347] hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-10 absolute  sm:w-64 sm:h-64"
 		>
-		<img class="z-0 w-56 absolute animate-spin" src="src\lib\img\crug.svg" alt="">
+		<img class="z-0 w-56 absolute animate-spin" src={Crug} alt="">
 
 			<Icon
 				class="w-6 h-6 z-10 sm:w-28  sm:h-28"
@@ -66,7 +68,7 @@
 		<div
 			class="bg-[#F24347] sm:hidden flex top-56 left-32 items-center justify-center absolute rounded-full w-32 h-32"
 		>
-		<img class="z-0 w-28 absolute animate-spin" src="src\lib\img\crug.svg" alt="">
+		<img class="z-0 w-28 absolute animate-spin" src={Crug} alt="">
 
 			<Icon
 				class="w-8 h-8 sm:hidden sm:w-40 sm:h-40"
