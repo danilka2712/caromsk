@@ -53,7 +53,7 @@
 <main class="">
 	<div
 		id="1"
-		class="max-w-6xl box sm:px-6 mx-5 sm:mx-auto flex items-center mt-44 mb-72 sm:my-0 sm:h-[100vh]"
+		class="max-w-6xl relative  sm:px-6 mx-5 sm:mx-auto flex items-center mt-44 mb-72 sm:my-0 sm:h-[100vh]"
 	>
 		<img
 			class="absolute w-fit sm:hidden -right-5 -bottom-80 object-cover z-10 "
@@ -62,7 +62,7 @@
 		/>
 
 		<div
-			class="bg-[#F24347] hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-10 absolute  sm:w-64 sm:h-64"
+			class="bg-[#F24347] box hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-10 absolute  sm:w-64 sm:h-64"
 		>
 			<img class="z-0 w-56 absolute animate-spin" src={Crug} alt="" />
 
@@ -74,7 +74,7 @@
 			/>
 		</div>
 
-		<div class="sm:mb-24 hidden sm:flex flex-col box">
+		<div class="sm:mb-24 box hidden sm:flex flex-col box">
 			<h1 class=" font-bold text-5xl sm:text-[128px] leading-none m-0 text-stroke uppercase">
 				ВЫЕЗДНАЯ
 			</h1>
