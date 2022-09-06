@@ -2,6 +2,8 @@
 	import { gsap } from 'gsap/dist/gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Logo from '$lib/img/Logo.svg';
+	import Car3 from '$lib/img/Avtomih.svg';
+
 	import Logopng from '$lib/img/Logo.png';
 	import Crug from '$lib/img/crug.webp';
 
@@ -48,10 +50,12 @@
 		<Icon class="w-7 h-7" icon="akar-icons:telegram-fill" style="color: #364168;" />
 	</div>
 </header>
-<main>
+<main class="">
+	<img class="absolute object-cover -right-0 bottom-44 z-10 " src={Car3} alt="" />
+
 	<div
 		id="1"
-		class="max-w-6xl relative  box sm:px-6 mx-5 sm:mx-auto flex items-center my-20 sm:my-0 sm:h-[100vh]"
+		class="max-w-6xl relative  box sm:px-6 mx-5 sm:mx-auto flex items-center mt-44 mb-72 sm:my-0 sm:h-[100vh]"
 	>
 		<div
 			class="bg-[#F24347] hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-10 absolute  sm:w-64 sm:h-64"
@@ -65,20 +69,21 @@
 				rotate="90deg"
 			/>
 		</div>
-		<div
-			class="bg-[#F24347] sm:hidden flex top-40 right-0 items-center justify-center absolute rounded-full w-20 h-20"
-		>
-		<img class="z-0 w-16 absolute animate-spin" src={Crug} alt="">
-
-			<Icon
-				class="w-4 h-4 sm:hidden sm:w-40 sm:h-40"
-				icon="akar-icons:arrow-right"
-				style="color: white;"
-				rotate="90deg"
-			/>
-		</div>
-		<div class="sm:mb-24 box">
+		
+		<div class="sm:mb-24 hidden sm:flex box">
 			<h1 class=" font-bold text-5xl sm:text-[128px] leading-none m-0 text-stroke uppercase">
+				ВЫЕЗДНАЯ
+			</h1>
+			<h1 class="sm:ml-28 font-bold text-5xl sm:text-[128px] leading-none m-0 uppercase">
+				ПРОВЕРКА
+			</h1>
+			<h1 class="sm:ml-12 font-bold text-5xl sm:text-[128px] leading-none m-0 uppercase">
+				автомобиля
+			</h1>
+		</div>
+		<div class="sm:hidden box">
+
+			<h1 class="font-bold text-5xl sm:text-[128px] leading-none m-0  uppercase">
 				ВЫЕЗДНАЯ
 			</h1>
 			<h1 class="sm:ml-28 font-bold text-5xl sm:text-[128px] leading-none m-0 uppercase">

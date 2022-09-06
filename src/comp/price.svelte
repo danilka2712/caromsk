@@ -1,5 +1,7 @@
 <script>
 	import axios from 'axios';
+	import Car3 from '$lib/img/Avtomih.svg';
+
 	let name = '';
 	let number = '+7';
 	let current = 'Проверка автомобиля';
