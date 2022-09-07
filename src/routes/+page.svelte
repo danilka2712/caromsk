@@ -50,7 +50,7 @@
 	<main >
 		<div
 			id="1"
-			class="max-w-6xl relative  sm:px-6 mx-5 sm:mx-auto flex items-center mt-44 mb-72 sm:my-0 sm:h-[100vh]"
+			class="max-w-6xl relative  sm:px-6 mx-5 lg:mx-auto flex items-center mt-44 mb-72 sm:my-0 sm:h-[100vh]"
 		>
 			<img
 				class="absolute w-fit sm:hidden -right-5 -bottom-80 object-cover z-10 "
@@ -72,13 +72,13 @@
 			</div>
 
 			<div class="sm:mb-24 box hidden sm:flex flex-col box">
-				<h1 class=" font-bold text-5xl sm:text-[128px] leading-none m-0 text-stroke uppercase">
+				<h1 class=" font-bold text-5xl sm:text-[100px] lg:text-[128px] leading-none m-0 text-stroke uppercase">
 					ВЫЕЗДНАЯ
 				</h1>
-				<h1 class="sm:ml-28 font-bold text-5xl sm:text-[128px] leading-none m-0 uppercase">
+				<h1 class="sm:ml-28 font-bold sm:text-[100px] text-5xl lg:text-[128px] leading-none m-0 uppercase">
 					ПРОВЕРКА
 				</h1>
-				<h1 class="sm:ml-12 font-bold text-5xl sm:text-[128px] leading-none m-0 uppercase">
+				<h1 class="sm:ml-12 font-bold sm:text-[100px] text-5xl lg:text-[128px] leading-none m-0 uppercase">
 					автомобиля
 				</h1>
 			</div>

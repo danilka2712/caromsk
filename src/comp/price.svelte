@@ -83,7 +83,7 @@ class="w-screen h-screen fixed z-30 top-0 flex justify-center items-center left-
 		<div>
 			<h1 class=" font-semibold text-3xl sm:text-4xl">Выберете услугу</h1>
 		</div>
-		<div class="grid grid-cols-2 sm:grid-cols-4 mt-16 gap-5 sm:gap-14">
+		<div class="grid grid-cols-2 lg:grid lg:grid-cols-4 mt-16 gap-5 sm:gap-14">
 			{#each items as i}
 				<div
 					on:click={() => ((current = i.name), (price = i.price))}
@@ -103,7 +103,7 @@ class="w-screen h-screen fixed z-30 top-0 flex justify-center items-center left-
 				</div>
 			{/each}
 		</div>
-		<div class="sm:mt-20 mt-10 items-center sm:grid sm:grid-cols-4 gap-14">
+		<div class="sm:mt-20 mt-10 items-center sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-4 gap-14">
 			<div class="mb-14 sm:mb-0">
 				<h1 class=" font-medium text-xl">Вы выбрали:</h1>
 				<p>{current}</p>

@@ -76,8 +76,8 @@
 	</div>
 {:else}
 	<div class=" absolute top-0 left-0 z-0 w-screen h-screen bg-[#F5F5F5]">
-		<div class="max-w-7xl sm:flex mx-5 sm:mx-auto mt-32 sm:mt-40">
-			<div class="sm:w-1/2 relative z-10">
+		<div class="max-w-7xl lg:flex mx-5 lg:mx-auto mt-32 sm:mt-40">
+			<div class="lg:w-1/2 relative z-10">
 				<h1 class="sm:text-3xl text-2xl mb-8 font-medium">Вскрытие автомобиля</h1>
 				<p class="sm:hidden">
 					Наши мастера приедут по указанному адресу и
@@ -96,7 +96,7 @@
 					<p>от <span class="">900</span> руб.</p>
 				</div>
 			</div>
-			<div class="sm:w-1/2 py-10  sm:pl-80 sm:absolute sm:top-32 sm:right-32 sm:justify-end">
+			<div class="lg:w-1/2 py-10  lg:pl-80 lg:absolute lg:top-32 lg:right-32 lg:justify-end">
 				<form
 					class="bg-[#E7E7E7] rounded-lg sm:p-12 p-10"
 					on:submit|preventDefault={submit}

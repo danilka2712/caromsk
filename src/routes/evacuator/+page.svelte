@@ -71,10 +71,10 @@ class="w-screen h-screen fixed z-30 top-0 flex justify-center items-center left-
 	</div>
 {:else}
 	<div class="w-screen absolute z-0 top-0 left-0 sm:h-screen bg-[#F5F5F5]">
-		<div class="max-w-7xl sm:flex mx-5 sm:mx-auto mt-32  sm:mt-40">
-			<div class="sm:w-1/2 relative z-10">
-				<h1 class="sm:text-3xl text-2xl sm:mb-8 font-medium">Эвакуатор </h1>
-				<p class="text-base hidden sm:flex">
+		<div class="max-w-7xl lg:flex mx-5 lg:mx-auto mt-32  sm:mt-40">
+			<div class="lg:w-1/2 relative z-10">
+				<h1 class="lg:text-3xl text-2xl lg:mb-8 font-medium">Эвакуатор </h1>
+				<p class="text-base hidden lg:flex">
 					Срочно потребовалась техническая помощь на дорогах Омской области? «CARHUNTER» оперативно
 					предоставит вам эти услуги в любом районе <br /> Омска – в любое время суток, быстро,
 					профессионально, недорого. Эвакуация автотранспорта производиться слаженной командой
@@ -82,17 +82,17 @@ class="w-screen h-screen fixed z-30 top-0 flex justify-center items-center left-
 					более 3 лет. Нам доверяют эвакуацию и перевозку автомобилей любой сложности и уверенно рекомендуют
 					друзьям.
 				</p>
-				<p class="text-base mt-6 sm:hidden">
+				<p class="text-base mt-6 lg:hidden">
 					На дороге может случиться внезапная сложная ситуация, когда необходимо вызвать эвакуатор в
 					Омской области. Круглосуточная служба «CARHUNTER» оказывает помощь в случае
 					запланированной перевозки или срочной эвакуации автомобиля в Омске.
 				</p>
-				<div class="flex sm:text-xl items-center sm:justify-start sm:gap-5 justify-between mt-10">
+				<div class="flex sm:text-xl items-center lg:justify-start lg:gap-5 justify-between mt-10">
 					<p class="">Стоимость:</p>
 					<p>от <span class="">1550</span> руб.</p>
 				</div>
 				<form class="bg-[#E7E7E7] mt-10 rounded-lg p-10" on:submit|preventDefault={submit} action="">
-					<div class="flex flex-col sm:flex-row gap-5">
+					<div class="flex flex-col lg:flex-row gap-5">
 						<input
 							placeholder="Ваше имя"
 							bind:value={name}
@@ -105,15 +105,15 @@ class="w-screen h-screen fixed z-30 top-0 flex justify-center items-center left-
 							use:imask={options}
 							on:accept={accept}
 							on:complete={complete}
-							class="p-3 py-3 sm:py-0 w-full rounded-lg"
+							class="p-3 py-3 lg:py-0 w-full rounded-lg"
 							type="tel"
 						/>
 						<button class="btn p-3 py-3 rounded-lg text-white w-full">Отправить</button>
 					</div>
 				</form>
 			</div>
-			<div class="sm:w-1/2 sm:flex sm:absolute sm:z-0 sm:top-32 sm:right-32 sm:justify-end">
-				<div class="sm:w-3/4 w-full">
+			<div class="lg:w-1/2 lg:flex lg:absolute sm:z-0 sm:top-32 sm:right-32 sm:justify-end">
+				<div class="lg:w-3/4 w-full">
 					<img src={Image} alt="" />
 				</div>
 			</div>
