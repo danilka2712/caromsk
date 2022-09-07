@@ -37,7 +37,7 @@
 				<div class="">
 					<h1 class:active={current === i.id} on:click={()=>current = i.id} class="pb-4 font-medium hover:scale-102 duration-500 sm:text-slate-500 cursor-pointer text-lg">{i.name}</h1>
 					{#if current === i.id}
-					<div class="mb-5">
+					<div class="mb-5 sm:hidden">
 						<p class="">{@html i.text}</p>
 					</div>
 					{/if}
