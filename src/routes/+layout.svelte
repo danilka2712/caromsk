@@ -23,7 +23,7 @@
 		<div class="sm:hidden  flex items-center gap-5">
 			<a
 				class="bg-[#364168] w-7 h-7 flex items-center justify-center rounded-full"
-				href="tel:+79081197279"
+				href="tel:+7 (900) 000 00-00"
 			>
 				<Icon class="w-4 h-4" icon="akar-icons:phone" color="#ffffff" />
 			</a>
@@ -39,7 +39,7 @@
 		<a href="autopsy">Вскрытие автомобиля</a>
 	</div>
 	<div class="gap-7 hidden sm:flex items-center">
-		<a href="/">+ 7 (908) 119 72-79</a>
+		<a href="/">+ +7 (913) 113 13-23</a>
 		<Icon class="w-7 h-7" icon="akar-icons:whatsapp-fill" style="color: #364168;" />
 		<Icon class="w-7 h-7" icon="akar-icons:telegram-fill" style="color: #364168;" />
 	</div>
