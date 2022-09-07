@@ -4,9 +4,7 @@
 	import Logo from '$lib/img/Logo.svg';
 	import Car3 from '$lib/img/Avtomih.svg';
 	import Crug from '$lib/img/crug.webp';
-	import { fly } from 'svelte/transition';
-	import { fade } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
+
 	import Icon from '@iconify/svelte';
 	import Reviews from '../comp/Reviews.svelte';
 	import About from '../comp/about.svelte';
@@ -42,7 +40,7 @@
 				</button>
 			</div>
 			<div class="p-8 text-4xl absolute bottom-32 font-light gap-10 flex flex-col">
-				<a on:click={open.increment} href="">О нас</a>
+				<a on:click={open.increment} href="/">Главная</a>
 				<a on:click={open.increment} href="evacuator">Эвакуатор</a>
 				<a on:click={open.increment} href="autopsy">Вскрытие авто</a>
 			</div>
