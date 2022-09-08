@@ -27,7 +27,7 @@
 	];
 </script>
 
-<div class="sm:h-[80vh] mt-12 sm:relative  max-w-7xl sm:pt-20 mx-5 sm:flex flex-col sm:mx-auto">
+<div class="lg:h-[80vh] mt-12 lg:relative  max-w-7xl lg:pt-20 mx-5 lg:flex flex-col lg:mx-auto">
 	<div>
 		<h1 class="text-3xl  sm:text-4xl mb-12 font-semibold">Частые вопросы</h1>
 	</div>

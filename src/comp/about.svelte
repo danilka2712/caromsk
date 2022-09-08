@@ -2,11 +2,11 @@
 	import Car3 from '$lib/img/Avtomih.svg';
 </script>
 
-<div class="sm:h-screen relative  max-w-7xl pt-20 mx-5 sm:flex sm:mx-auto">
+<div class="lg:h-screen relative  max-w-7xl pt-20 mx-5 lg:flex lg:mx-auto">
 	<div class="">
 		<div class="">
 			<div>
-				<h1 class="text-3xl sm:text-4xl font-semibold">Что мы проверяем</h1>
+				<h1 class="text-3xl lg:text-4xl font-semibold">Что мы проверяем</h1>
 			</div>
 			<div>
 				<h1 class=" font-medium text-xl mt-10 pb-3">Внешний осмотр</h1>

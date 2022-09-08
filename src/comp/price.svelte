@@ -78,8 +78,8 @@ class="w-screen h-screen fixed z-30 top-0 flex justify-center items-center left-
 </div>
 </div>
 {/if}
-<div id="2" class="sm:h-screen  bg-[#F5F5F5]">
-	<div class=" max-w-7xl sm:mx-auto mx-5 py-14 sm:pt-20">
+<div id="2" class="lg:h-screen  bg-[#F5F5F5]">
+	<div class=" max-w-7xl lg:mx-auto mx-5 py-14 sm:pt-20">
 		<div>
 			<h1 class=" font-semibold text-3xl sm:text-4xl">Выберете услугу</h1>
 		</div>
@@ -88,7 +88,7 @@ class="w-screen h-screen fixed z-30 top-0 flex justify-center items-center left-
 				<div
 					on:click={() => ((current = i.name), (price = i.price))}
 					class:active={current === i.name}
-					class="bg-white  sm:h-48 p-7 rounded-lg"
+					class="bg-white  sm:h-48 p-4 sm:py-7 py-7 sm:p-7 rounded-lg"
 				>
 					<h1 class="text-xl flex  leading-6 sm:mb-5 w-32">{i.name}</h1>
 					<p class="sm:flex hidden w-40 text-sm font-light">

@@ -59,7 +59,7 @@
 			/>
 
 			<div
-				class="bg-[#F24347] box hidden sm:flex  items-center justify-center  rounded-full  sm:top-24 right-10 absolute  sm:w-64 sm:h-64"
+				class="bg-[#F24347] box hidden lg:flex  items-center justify-center  rounded-full  sm:top-24 right-10 absolute  sm:w-64 sm:h-64"
 			>
 				<img class="z-0 w-56 absolute animate-spin" src={Crug} alt="" />
 
