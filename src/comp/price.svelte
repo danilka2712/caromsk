@@ -1,7 +1,7 @@
 <script>
 	import axios from 'axios';
 	import { imask } from '@imask/svelte';
-	let closeOpen = false
+	let closeOpen = false;
 	let name = '';
 	let number = '';
 	let current = 'Проверка автомобиля';
@@ -37,7 +37,7 @@
 					console.log(error);
 				}
 			);
-			closeOpen = true
+		closeOpen = true;
 	}
 
 	const items = [
@@ -67,16 +67,20 @@
 		}
 	];
 </script>
-{#if closeOpen }
-<div
-class="w-screen h-screen fixed z-30 top-0 flex justify-center items-center left-0 bg-black/40"
->
-<div class="w-56 bg-white rounded-md flex flex-col justify-center items-center  p-5">
-	<h1 class="text-center font-medium text-xl mb-7">Отправлено</h1>
-	<p class="text-center">Ожидайте звонка в течение нескольких минут</p>
-	<button on:click={() => closeOpen = false} class="bg-[#f24347] text-white rounded-md w-full h-8 mt-7 ">Ок</button>
-</div>
-</div>
+
+{#if closeOpen}
+	<div
+		class="w-screen h-screen fixed z-30 top-0 flex justify-center items-center left-0 bg-black/40"
+	>
+		<div class="w-56 bg-white rounded-md flex flex-col justify-center items-center  p-5">
+			<h1 class="text-center font-medium text-xl mb-7">Отправлено</h1>
+			<p class="text-center">Ожидайте звонка в течение нескольких минут</p>
+			<button
+				on:click={() => (closeOpen = false)}
+				class="bg-[#f24347] text-white rounded-md w-full h-8 mt-7 ">Ок</button
+			>
+		</div>
+	</div>
 {/if}
 <div id="2" class="lg:h-screen  bg-[#F5F5F5]">
 	<div class=" max-w-7xl lg:mx-auto mx-5 py-14 sm:pt-20">
@@ -135,7 +139,7 @@ class="w-screen h-screen fixed z-30 top-0 flex justify-center items-center left-
 					class="p-3 py-4 sm:py-0 w-full rounded-lg"
 					type="tel"
 				/>
-				<button class="btn w-full py-4 rounded-lg text-white">Оставить заявку</button>
+				<button class="btn hover:bg-[#eb3b3e] duration-300 w-full py-4 rounded-lg text-white">Оставить заявку</button>
 			</form>
 		</div>
 	</div>
@@ -145,6 +149,15 @@ class="w-screen h-screen fixed z-30 top-0 flex justify-center items-center left-
 	.active {
 		background-color: #f24347;
 		color: white;
+		transition-property: background-color;
 		height: fit-content;
+		transition-duration: 300ms;
+		transition-property: background-color;
+	}
+	:hover.active {
+		background-color: #eb3b3e;
+		transition-duration: 300ms;
+		transition-property: background-color;
+		
 	}
 </style>
