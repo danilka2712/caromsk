@@ -28,10 +28,7 @@
 </script>
 
 {#if $open}
-	<div
-		
-		class="bg-white fixed z-40 top-0 left-0 w-screen h-screen sm:hidden"
-	>
+	<div class="bg-white fixed z-40 top-0 left-0 w-screen h-screen sm:hidden">
 		<div class=" relative h-full">
 			<div class="p-5 flex justify-between items-center">
 				<h1 class="text-2xl font-medium">Меню</h1>
@@ -47,7 +44,7 @@
 		</div>
 	</div>
 {:else}
-	<main >
+	<main>
 		<div
 			id="1"
 			class="max-w-6xl relative  sm:px-6 mx-5 lg:mx-auto flex items-center mt-44 mb-72 sm:my-0 sm:h-[100vh]"
@@ -72,13 +69,19 @@
 			</div>
 
 			<div class="sm:mb-24 box hidden sm:flex flex-col box">
-				<h1 class=" font-bold text-5xl sm:text-[100px] lg:text-[128px] leading-none m-0 text-stroke uppercase">
+				<h1
+					class=" font-bold text-5xl sm:text-[100px] lg:text-[128px] leading-none m-0 text-stroke uppercase"
+				>
 					ВЫЕЗДНАЯ
 				</h1>
-				<h1 class="sm:ml-28 font-bold sm:text-[100px] text-5xl lg:text-[128px] leading-none m-0 uppercase">
+				<h1
+					class="sm:ml-28 font-bold sm:text-[100px] text-5xl lg:text-[128px] leading-none m-0 uppercase"
+				>
 					ПРОВЕРКА
 				</h1>
-				<h1 class="sm:ml-12 font-bold sm:text-[100px] text-5xl lg:text-[128px] leading-none m-0 uppercase">
+				<h1
+					class="sm:ml-12 font-bold sm:text-[100px] text-5xl lg:text-[128px] leading-none m-0 uppercase"
+				>
 					автомобиля
 				</h1>
 			</div>
@@ -95,11 +98,13 @@
 		<Reviews />
 		<Faq />
 	</main>
-	<footer  class="bg-[#F5F5F5]  sm:h-[25vh]">
-		<div class="max-w-7xl sm:py-0 py-12 mx-5 flex justify-between sm:mx-auto sm:pt-16">
-			<img class="w-48" src={Logo} alt="" />
-			<div class="flex flex-col items-end">
-				<div class="flex gap-7 mb-7">
+	<footer class="bg-[#F5F5F5]  sm:h-[25vh]">
+		<div class="max-w-7xl sm:py-0 py-12 mx-5 flex justify-between items-center sm:mx-auto sm:pt-16">
+			<div>
+				<img class="w-48" src={Logo} alt="" />
+			</div>
+			<div class="flex">
+				<div class="flex gap-7 ">
 					<a href="http://">
 						<Icon class="w-7 h-7" icon="akar-icons:whatsapp-fill" style="color: #364168;" />
 					</a>
@@ -108,7 +113,7 @@
 					</a>
 				</div>
 
-				<a href="tel:+79081197279">+7 (913) 113 13-23</a>
+				<a class="sm:flex hidden" href="tel:+79081197279">+7 (913) 113 13-23</a>
 			</div>
 		</div>
 	</footer>
